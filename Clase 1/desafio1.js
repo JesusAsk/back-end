@@ -56,7 +56,7 @@ class Productmanager{
 
 const Productos = new Productmanager()
 Productos.addProduct( "Lomo", "Carne de ternera de primera calidad ", 3490 , "#" , 4 , 20 , 1 );
-Productos.addProduct( "Colita de Cuadril", "Carne de ternera de primera calidad" , 3140 , "#", 6 , 30 ,2 );
+Productos.addProduct( "Colita de Cuadril", "Carne de ternera de primera calidad" , 3140 , "#", 6 , 30 ,2 )
 
 console.log(Productos.getProductsById(2))
 
