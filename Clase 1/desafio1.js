@@ -30,12 +30,12 @@ class Productmanager{
 
         let codigo = this.products.find((prod) => prod.code == producto.code)
             if (codigo){
-                return "El codigo ya existe, ingrese uno nuevo"
+                return console.log ("El codigo ya existe, ingrese uno nuevo")
             }else{
                 this.products.push(producto);
                 return this.products;
             }
-
+                
 
     }
         
@@ -54,10 +54,13 @@ class Productmanager{
 }
 
 
-const Productos = new Productmanager()
-Productos.addProduct( "Lomo", "Carne de ternera de primera calidad ", 3490 , "#" , 4 , 20 , 1 );
-Productos.addProduct( "Colita de Cuadril", "Carne de ternera de primera calidad" , 3140 , "#", 6 , 30 ,2 )
 
-console.log(Productos.getProductsById(2))
+const Productos = new Productmanager()
+Productos.addProduct( "Lomo", "Carne de ternera de primera calidad ", 3490 , "#" , 4 , 20 ,  );
+Productos.addProduct( "Colita de Cuadril", "Carne de ternera de primera calidad" , 3140 , "#", 6 , 30 )
+Productos.addProduct( "Solomillo", "Carne de cerdo de primera calidad" , 3490 , "#", 4 , 40 )
+
+console.log(Productos)
+
 
 
